@@ -55,7 +55,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".My_voucher"
+            android:name=".cart"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -84,7 +84,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".editaccount"
+            android:name=".My_voucher"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -127,7 +127,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".cart"
+            android:name=".editaccount"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

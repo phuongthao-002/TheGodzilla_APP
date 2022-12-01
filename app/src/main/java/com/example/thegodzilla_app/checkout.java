@@ -39,6 +39,12 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
 
     private void addEvent()
     {
+        binding.btnBackhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
         binding.btnEditAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
@@ -106,6 +112,7 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
                 startActivity(intent);
             }
         });
+
 
     }
     private void switchDeliveryMethod(LinearLayout ll24h, LinearLayout llStandard, LinearLayout llFast, Dialog dialogDelivery) {
