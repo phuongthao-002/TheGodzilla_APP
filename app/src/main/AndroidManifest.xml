@@ -13,6 +13,20 @@
         android:theme="@style/Theme.TheGodzilla_APP"
         tools:targetApi="31">
         <activity
+            android:name=".Wishlist"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Notification"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".zalopaymethod"
             android:exported="false">
             <meta-data
@@ -55,7 +69,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".cart"
+            android:name=".chat"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -71,7 +85,6 @@
         <activity
             android:name=".LogIn"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -107,13 +120,12 @@
         <activity
             android:name=".checkout"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".chat"
+            android:name=".cart"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -134,6 +146,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -148,8 +161,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
