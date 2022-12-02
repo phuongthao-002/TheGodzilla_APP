@@ -6,18 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".paymentmethod"
     android:orientation="vertical"
-    android:padding="20dp">
+   >
 
-    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
-    <!--        android:id="@+id/bottom_Navi"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_alignParentBottom="true"-->
-    <!--        app:menu="@menu/action_bar_bottom_nav"-->
-    <!--        app:itemBackground="@color/black"-->
-    <!--        app:itemTextColor="@color/custom_color_bottom_nav"-->
-    <!--        app:itemIconTint="@color/custom_color_bottom_nav"/>-->\
+      <com.google.android.material.bottomnavigation.BottomNavigationView
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+            app:menu="@menu/action_bar_bottom_nav"
+        app:itemBackground="@color/black"
+       app:itemTextColor="@color/custom_color_bottom_nav"
+        app:itemIconTint="@color/custom_color_bottom_nav"/>
     <ListView
+        android:padding="10dp"
+        android:id="@+id/lv_pay_method"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:divider="@null"/>
 </RelativeLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,42 +8,65 @@
     android:orientation="vertical"
     android:padding="20dp">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/zalopay"/>
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/zalo.guide"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:textSize="20dp"
-        android:gravity="center"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/zalo.sure"
-        android:textColor="@color/black"
-        android:textSize="17sp"
-        android:gravity="center"/>
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:src="@drawable/zalopay" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/zalo.guide"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/zalo.sure"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+    </LinearLayout>
 
     <EditText
-        android:layout_marginTop="10dp"
-        android:id="@+id/edt_address.ward"
+        android:id="@+id/edt_zalo_num"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginBottom="320dp"
         android:background="@drawable/duongvien_goctron"
         android:hint="@string/zalo.enterphone"
         android:inputType="text"
-        android:textSize="17sp">
-    </EditText>
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"></EditText>
+
     <Button
-        android:id="@+id/btn_zalo.continue"
-        android:layout_gravity="center"
+        android:id="@+id/btn_zalo_continue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#031824"
         android:text="Continue"
-        android:textSize="17sp"/>
-</LinearLayout>
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
