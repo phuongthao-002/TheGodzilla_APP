@@ -173,7 +173,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:text="Continue with Google"
-        android:drawableLeft="@drawable/facebook"
+        android:drawableLeft="@mipmap/google"
         android:backgroundTint="@color/cardview_light_background"
         android:textColor="@color/black"
         android:textSize="15sp">
@@ -187,7 +187,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:text="Continue with Facebook"
-        android:drawableLeft="@drawable/facebook"
+        android:drawableLeft="@mipmap/facebook"
         android:backgroundTint="@color/cardview_light_background"
         android:textColor="@color/black"
         android:textSize="15sp">
