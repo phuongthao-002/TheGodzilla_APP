@@ -1,6 +1,6 @@
 package com.example.models;
 
-public class Product
+public class Product1
 {
     int productThumb;
     String productname;
@@ -8,7 +8,7 @@ public class Product
     String productPrice;
     String productSl;
 
-    public Product(int productThumb, String productname, String productType, String productPrice, String productSl)
+    public Product1(int productThumb, String productname, String productType, String productPrice, String productSl)
     {
         this.productThumb = productThumb;
         this.productname = productname;

@@ -9,7 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.models.Product;
+import com.example.models.Product1;
 import com.example.thegodzilla_app.R;
 
 import java.util.List;
@@ -18,22 +18,22 @@ public class checkout_adapter extends BaseAdapter
 {
     Activity activity;
     int item_layout;
-    List<Product> products;
+    List<Product1> product1s;
 
-    public checkout_adapter(Activity activity, int item_layout, List<Product> products) {
+    public checkout_adapter(Activity activity, int item_layout, List<Product1> product1s) {
         this.activity = activity;
         this.item_layout = item_layout;
-        this.products = products;
+        this.product1s = product1s;
     }
 
     @Override
     public int getCount() {
-        return products.size();
+        return product1s.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return products.get(i);
+        return product1s.get(i);
     }
 
     @Override
@@ -65,7 +65,7 @@ public class checkout_adapter extends BaseAdapter
         }
 
         //Binding data
-        Product b  = products.get(i);
+        Product1 b  = product1s.get(i);
         holder.imvThumb.setImageResource(b.getProductThumb());
         holder.txtName.setText(b.getProductname());
         holder.txtPrice.setText(String.valueOf(b.getProductPrice()));

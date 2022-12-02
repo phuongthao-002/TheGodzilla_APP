@@ -130,7 +130,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".checkout"
+            android:name=".editaccount"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -151,7 +151,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".editaccount"
+            android:name=".checkout"
             android:exported="true">
 
 

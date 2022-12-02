@@ -14,7 +14,7 @@ import android.widget.ListView;
 import com.example.Interface.MyBtnVoucherClick;
 import com.example.adapter.checkout_adapter;
 import com.example.adapter.voucher_adapter;
-import com.example.models.Product;
+import com.example.models.Product1;
 import com.example.models.Vouchers;
 import com.example.thegodzilla_app.databinding.ActivityCheckoutBinding;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -25,7 +25,7 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
 {
     ActivityCheckoutBinding binding;
     checkout_adapter adapter;
-    ArrayList<Product> products;
+    ArrayList<Product1> product1s;
     BottomSheetDialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -149,10 +149,10 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
 
     private void loadData()
     {
-        products = new ArrayList<>();
-        products.add(new Product(R.drawable.puma,"Puma","Shoes fashion","180000","2"));
-        products.add(new Product(R.drawable.logoconverse,"Converse","Shoes fashion","190000","3"));
-        adapter = new checkout_adapter(checkout.this,R.layout.item_checkout_list,products);
+        product1s = new ArrayList<>();
+        product1s.add(new Product1(R.drawable.puma,"Puma","Shoes fashion","180000","2"));
+        product1s.add(new Product1(R.drawable.logoconverse,"Converse","Shoes fashion","190000","3"));
+        adapter = new checkout_adapter(checkout.this,R.layout.item_checkout_list, product1s);
         binding.lvproductCheckout.setAdapter(adapter);
     }
 
