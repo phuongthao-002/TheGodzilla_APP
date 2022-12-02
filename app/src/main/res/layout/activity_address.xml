@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,135 +7,160 @@
     tools:context=".address"
     android:orientation="vertical"
     android:padding="20dp">
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contract"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/black">
-    </TextView>
-    <EditText
-        android:layout_marginTop="10dp"
-        android:id="@+id/edt_address.name"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/duongvien_goctron"
-        android:hint="@string/contract_name"
-        android:inputType="text"
-        android:textSize="17sp">
-    </EditText>
-    <EditText
-        android:layout_marginTop="5dp"
-        android:id="@+id/edt_address.phone"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/duongvien_goctron"
-        android:hint="@string/contract_phone"
-        android:inputType="text"
-        android:textSize="17sp">
-    </EditText>
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Address"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/black">
-    </TextView>
-    <EditText
-        android:layout_marginTop="10dp"
-        android:id="@+id/edt_address.ward"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/duongvien_goctron"
-        android:hint="@string/contract_address"
-        android:inputType="text"
-        android:textSize="17sp">
-    </EditText>
-    <EditText
-        android:layout_marginTop="5dp"
-        android:id="@+id/edt_address.street"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/duongvien_goctron"
-        android:hint="@string/contract_street"
-        android:inputType="text"
-        android:textSize="17sp">
-    </EditText>
-    <TextView
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Setting"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/black">
-    </TextView>
     <LinearLayout
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/duongvien_goctron"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
         <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Type"
-            android:layout_gravity="center"
-            android:textSize="17sp"
+            android:text="Contract"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@color/black">
         </TextView>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:textColor="@color/black"
-            android:text="Office"
-            android:textSize="17sp"
-            android:backgroundTint="@color/white"
-            android:layout_gravity="center"/>
-        <Button
-            android:gravity="right"
-            android:layout_marginLeft="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="45dp"
-            android:textColor="@color/black"
-            android:text="Home"
-            android:textSize="17sp"
-            android:backgroundTint="@color/white"
-            android:layout_gravity="center"/>
-        <LinearLayout
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_address_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/duongvien_goctron"
+            android:hint="@string/contract_name"
+            android:inputType="text"
+            android:textSize="17sp">
+        </EditText>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/edt_address_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/duongvien_goctron"
+            android:hint="@string/contract_phone"
+            android:inputType="text"
+            android:textSize="17sp">
+        </EditText>
+        <TextView
+            android:layout_marginTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="">
+            android:text="Address"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+        </TextView>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_address.ward"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/duongvien_goctron"
+            android:hint="@string/contract_address"
+            android:inputType="text"
+            android:textSize="17sp"
+            tools:ignore="InvalidId">
+        </EditText>
+        <EditText
+            android:layout_marginTop="5dp"
+            android:id="@+id/edt_address_street"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/duongvien_goctron"
+            android:hint="@string/contract_street"
+            android:inputType="text"
+            android:textSize="17sp">
+        </EditText>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black">
+        </TextView>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/duongvien_goctron"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+                <Button
+                    android:id="@+id/btn_address_home_office"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="Office"
+                    android:textSize="17sp"
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/duongvien_goctron">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set as default"
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="@color/black">
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ON"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:id="@+id/txt_Address_On_Off"
+                    android:layout_gravity="center">
+                </TextView>
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_tron"
+                    android:layout_gravity="center"
+                    android:id="@+id/imb_Address_Tron">
+                </ImageButton>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/duongvien_goctron">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Set as default"
-            android:layout_gravity="center"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            android:textColor="@color/black">
-        </TextView>
-    </LinearLayout>
     <Button
-        android:layout_gravity="center"
+        android:id="@+id/btn_address_done"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
         android:backgroundTint="#031824"
         android:text="Done"
-        android:textSize="17sp"/>
-
-</LinearLayout>
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

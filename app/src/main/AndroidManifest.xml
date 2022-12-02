@@ -48,7 +48,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".paymentmethod"
+            android:name=".cart"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -104,7 +104,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".credit_debit_card"
+            android:name=".address"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -125,7 +125,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".cart"
+            android:name=".paymentmethod"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -152,7 +152,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".address"
+            android:name=".credit_debit_card"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
