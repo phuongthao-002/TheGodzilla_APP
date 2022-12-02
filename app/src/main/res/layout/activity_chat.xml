@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".chat">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rev_chat"
+        android:layout_margin="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/chat_layout_bottom">
+    </androidx.recyclerview.widget.RecyclerView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/chat_layout_bottom">
+        <EditText
+            android:id="@+id/edt_chat_mess"
+            android:layout_toStartOf="@+id/btn_chat_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter message"
+            android:textSize="17dp"
+            android:textColor="#9F9F9F"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp">
+        </EditText>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:backgroundTint="#031824"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btn_chat_send"/>
+    </RelativeLayout>
+
+</RelativeLayout>

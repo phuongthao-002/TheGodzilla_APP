@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -18,6 +19,7 @@ public class cart extends AppCompatActivity
     ActivityCartBinding binding;
     cart_adapter adapter;
     ArrayList<Productcart> productcarts;
+    int i=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,20 +39,47 @@ public class cart extends AppCompatActivity
                 finish();
             }
         });
+        binding.btnCheckout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(cart.this,checkout.class);
+                startActivity(intent);
+
+            }
+        });
+        binding.imvTickAll.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                if (i%2==0)
+                {
+                    binding.imvTickAll.setImageResource(R.drawable.ic_baseline_check_box_outline_blank_24);
+                    binding.txtTotal.setText("Total: 0$");
+                }
+                else
+                {
+                    binding.imvTickAll.setImageResource(R.drawable.ic_baseline_check_box_24);
+                    binding.txtTotal.setText("Total: 2000$");
+                }
+                i=i+1;
+
+            }
+        });
+
+
     }
 
 
 
     private void loadData()
     {
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.rcvListCart);
-        recyclerView.setHasFixedSize(true);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(cart.this,LinearLayoutManager.VERTICAL,false);
-        recyclerView.setLayoutManager(layoutManager);
-        ArrayList<Productcart> arrayList = new ArrayList<>();
-        arrayList.add(new Productcart(R.drawable.puma,"puma"));
-        arrayList.add(new Productcart(R.drawable.logoconverse,"converse"));
-        cart_adapter cart_adapter= new cart_adapter(arrayList,getApplicationContext()) ;
-        recyclerView.setAdapter(cart_adapter);
+        productcarts = new ArrayList<>();
+        productcarts.add(new Productcart(R.drawable.puma,"Puma"));
+        productcarts.add(new Productcart(R.drawable.logoconverse,"Converse"));
+
+        //init adapter
+        adapter =new cart_adapter(cart.this,R.layout.item_cart_list,productcarts);
+        binding.lvProductCart.setAdapter(adapter);
     }
 }

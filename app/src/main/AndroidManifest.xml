@@ -13,6 +13,20 @@
         android:theme="@style/Theme.TheGodzilla_APP"
         tools:targetApi="31">
         <activity
+            android:name=".Wishlist"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Notification"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".zalopaymethod"
             android:exported="false">
             <meta-data
@@ -34,7 +48,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".paymentmethod"
+            android:name=".cart"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -55,7 +69,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".My_voucher"
+            android:name=".chat"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -71,7 +85,6 @@
         <activity
             android:name=".LogIn"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -84,14 +97,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".editaccount"
+            android:name=".My_voucher"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".credit_debit_card"
+            android:name=".address"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -107,13 +120,12 @@
         <activity
             android:name=".checkout"
             android:exported="true">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".chat"
+            android:name=".paymentmethod"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -127,19 +139,20 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".cart"
+            android:name=".editaccount"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".address"
+            android:name=".credit_debit_card"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -148,8 +161,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imv_Shoes"
+            android:layout_width="175dp"
+            android:layout_height="160dp"
+            android:src="@drawable/newbalance"/>
+
+        <TextView
+            android:id="@+id/txt_Name"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="New Balance 550 Green Blue"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#0B0A0A"/>
+        <TextView
+            android:id="@+id/txt_LowerAsk"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Lower Ask"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#A5A1A1"/>
+        <TextView
+            android:id="@+id/txt_Price"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="$90"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_Sold"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#DCD4D4"
+            android:drawableLeft="@drawable/greendot2"
+            android:text="1000 sold"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/imv_Cart"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/cart1"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
