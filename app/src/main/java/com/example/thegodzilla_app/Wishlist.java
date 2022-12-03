@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.GridView;
 
-import com.example.adapter.Wishlist_Product;
+import com.example.Interface.adapter.Wishlist_Product;
 import com.example.models.Wishlist_models;
 import com.example.thegodzilla_app.databinding.ActivityWishlistBinding;
 

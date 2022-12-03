@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 
-import com.example.adapter.MessageAdapter;
+import com.example.Interface.adapter.MessageAdapter;
 import com.example.models.Message;
 
 import java.util.ArrayList;

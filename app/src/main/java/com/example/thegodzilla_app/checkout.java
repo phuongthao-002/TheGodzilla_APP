@@ -12,8 +12,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.Interface.MyBtnVoucherClick;
-import com.example.adapter.checkout_adapter;
-import com.example.adapter.voucher_adapter;
+import com.example.Interface.adapter.checkout_adapter;
+import com.example.Interface.adapter.voucher_adapter;
 import com.example.models.Product1;
 import com.example.models.Vouchers;
 import com.example.thegodzilla_app.databinding.ActivityCheckoutBinding;
@@ -108,7 +108,7 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
         binding.btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(checkout.this,mypurchase.class);
+                Intent intent = new Intent(checkout.this,ordersuccess.class);
                 startActivity(intent);
             }
         });

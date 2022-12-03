@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.adapter.purchase_adapter;
+import com.example.Interface.adapter.purchase_adapter;
 import com.example.models.Mypurchase;
 import com.example.thegodzilla_app.databinding.ActivityMypurchaseBinding;
 

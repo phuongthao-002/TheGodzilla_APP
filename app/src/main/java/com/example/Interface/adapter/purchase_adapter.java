@@ -1,4 +1,4 @@
-package com.example.adapter;
+package com.example.Interface.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,31 +9,31 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.models.Product1;
+import com.example.models.Mypurchase;
 import com.example.thegodzilla_app.R;
 
 import java.util.List;
 
-public class checkout_adapter extends BaseAdapter
+public class purchase_adapter extends BaseAdapter
 {
     Activity activity;
     int item_layout;
-    List<Product1> product1s;
+    List<Mypurchase> mypurchases;
 
-    public checkout_adapter(Activity activity, int item_layout, List<Product1> product1s) {
+    public purchase_adapter(Activity activity, int item_layout, List<Mypurchase> mypurchases) {
         this.activity = activity;
         this.item_layout = item_layout;
-        this.product1s = product1s;
+        this.mypurchases = mypurchases;
     }
 
     @Override
     public int getCount() {
-        return product1s.size();
+        return mypurchases.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return product1s.get(i);
+        return mypurchases.get(i);
     }
 
     @Override
@@ -44,7 +44,6 @@ public class checkout_adapter extends BaseAdapter
     @Override
     public View getView(int i, View view, ViewGroup viewGroup)
     {
-
         ViewHolder holder;
         if (view == null)
         {
@@ -52,11 +51,10 @@ public class checkout_adapter extends BaseAdapter
             holder = new ViewHolder();
             LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(item_layout,null);
-            holder.imvThumb=view.findViewById(R.id.imvThumb_checkout);
-            holder.txtName = view.findViewById(R.id.txtName_checkout);
-            holder.txtPrice = view.findViewById(R.id.txtPrice_checkout);
-            holder.txtType= view.findViewById(R.id.txtType_checkout);
-            holder.txtSl = view.findViewById(R.id.txtquantity);
+            holder.imvThumb=view.findViewById(R.id.imv_picpurchase);
+            holder.txtName = view.findViewById(R.id.txt_nameProduct);
+            holder.txtStatus = view.findViewById(R.id.txt_status);
+            holder.txtNameButton = view.findViewById(R.id.btn_contact);
             view.setTag(holder);
 
         } else
@@ -65,18 +63,18 @@ public class checkout_adapter extends BaseAdapter
         }
 
         //Binding data
-        Product1 b  = product1s.get(i);
-        holder.imvThumb.setImageResource(b.getProductThumb());
-        holder.txtName.setText(b.getProductname());
-        holder.txtPrice.setText(String.valueOf(b.getProductPrice()));
-        holder.txtType.setText(b.getProductType());
-        holder.txtSl.setText(b.getProductSl());
+        Mypurchase b  = mypurchases.get(i);
+        holder.imvThumb.setImageResource(b.getPurchaseThumb());
+        holder.txtName.setText(b.getPurchaseName());
+        holder.txtStatus.setText(String.valueOf(b.getPurchaseStatus()));
+        holder.txtNameButton.setText(String.valueOf(b.getButtonName()));
+
         return view;
     }
     public static class ViewHolder
     {
         ImageView imvThumb;
-        TextView txtName,txtPrice,txtType,txtSl;
+        TextView txtName,txtStatus,txtNameButton;
 
     }
 }

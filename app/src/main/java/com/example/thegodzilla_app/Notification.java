@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.adapter.NotifiAdapter;
+import com.example.Interface.adapter.NotifiAdapter;
 import com.example.models.Notifi;
 import com.example.thegodzilla_app.databinding.ActivityNotificationBinding;
 
