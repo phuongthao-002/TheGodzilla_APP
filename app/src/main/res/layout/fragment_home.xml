@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck"
+    android:background="#F1F1F1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1800dp"
+        android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/black"
+            android:id="@+id/topBar"
+            android:padding="10dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/logo1" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/logo" />
+
+            <ImageButton
+                android:id="@+id/imbSearch"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/bgr_white_20"
+                android:src="@drawable/ic_search"
+                android:layout_gravity="end"/>
+
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="𝘾𝙧𝙖𝙛𝙩 𝙮𝙤𝙪𝙧 𝙤𝙬𝙣 𝙛𝙤𝙤𝙩𝙥𝙧𝙞𝙣𝙩𝙨"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <Button
+                android:id="@+id/btnBuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:backgroundTint="#FFFFFF"
+                android:text="Buy Now"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginTop="-100dp"
+                android:layout_marginRight="25dp"
+                android:padding="10dp" />
+            <me.relex.circleindicator.CircleIndicator
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:id="@+id/circleIndicator"
+                android:layout_gravity="center_horizontal"
+                android:padding="3dip"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="TRENDING SNEAKERS"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/nunito_extrabold"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/btnSee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@color/black"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:layout_marginLeft="50dp"
+                app:cornerRadius="5dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="380dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="340dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/cv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Converse"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/nunitobold"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:layout_width="180dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/nike1"
+                    android:layout_marginTop="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jordan 1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:fontFamily="@font/nunitobold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="-10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="320dp"
+                    android:src="@drawable/slipon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vans"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-5dp"
+                    android:fontFamily="@font/nunitobold"
+                    android:textColor="@color/black"/>
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="OUTFEET"
+            android:fontFamily="@font/nunitobold"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black"
+            />
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="520dp"
+            android:padding="0dp"
+            android:layout_marginTop="10dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/outfeet" />
+            <Button
+                android:id="@+id/btnShop"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/white"
+                android:text="SHOP NOW"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:cornerRadius="10dp"
+                android:fontFamily="@font/nunitobold"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="POPULAR BRAND"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/nunitobold"/>
+
+            <GridView
+                android:id="@+id/grvBrands"
+                android:layout_width="match_parent"
+                android:layout_height="650dp"
+                android:layout_gravity="center"
+                android:numColumns="2"
+                android:padding="10dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="310dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tip" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

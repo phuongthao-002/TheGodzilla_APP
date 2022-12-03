@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:background="#E3E3E3">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="20dp">
+        <ImageView
+            android:id="@+id/imvBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/backblue" />
+
+        <TextView
+            android:id="@+id/txtType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Men Shoes"
+            android:layout_marginTop="-35dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_product">
+
+        <ImageView
+            android:layout_width="206dp"
+            android:layout_height="200dp"
+            android:src="@drawable/newbalance"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/imvThumb"/>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:backgroundTint="#F6F6F6"
+            android:background="@drawable/bg_topleft_topright">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="NEW BANCE 550 GREEN BLUE"
+                android:textSize="30dp"
+                android:paddingTop="10dp"
+                android:id="@+id/txtName"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/nunitobold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$180.00"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:id="@+id/txtPrice"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/nunito1" />
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your workhorse with wings never rests on nostalgia. Now made with more pop and comfort than its predecessor, it's still the shoe you can put your faith in, the one with the plush support and day-to-day reliability."
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:fontFamily="@font/nunito1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View size guide"
+                    android:textSize="20sp"
+                    android:gravity="start"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/nunitobold"
+                    android:id="@+id/txtViewSizeGuide"/>
+                <Button
+                    android:id="@+id/btnAddToCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ADD TO BAG"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="60dp"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/nunito1"/>
+
+            </LinearLayout>
+            <GridView
+                android:id="@+id/gvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:numColumns="6"
+                android:padding="10dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <Button
+                android:id="@+id/btnBuyDetail"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="buy now"
+                android:textStyle="bold"
+                android:textSize="23sp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:fontFamily="@font/nunito1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
