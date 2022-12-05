@@ -1,5 +1,6 @@
 package com.example.thegodzilla_app;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -21,6 +22,9 @@ public class forgot_pwd extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forgot_pwd);
 
+        ActionBar actionBar =getSupportActionBar();
+        actionBar.hide();
+
         LinkViews();
         AddEvents();
     }
@@ -33,9 +37,10 @@ public class forgot_pwd extends AppCompatActivity {
         btnResetPwd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (edtEmailorPhone.getText().length() == 0)
-                    Toast.makeText(forgot_pwd.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
-                else startActivity(new Intent(forgot_pwd.this,confirm_OPT.class));
+//                if (edtEmailorPhone.getText().length() == 0)
+//                    Toast.makeText(forgot_pwd.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
+//                else
+                startActivity(new Intent(forgot_pwd.this,confirm_OPT.class));
             }
         });
         txtBackto.setOnClickListener(new View.OnClickListener() {

@@ -1,5 +1,6 @@
 package com.example.thegodzilla_app;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -14,13 +15,16 @@ public class LogIn extends AppCompatActivity {
 
     EditText edtEmail, edtPassword;
     TextView tvFogotPassword;
-    Button btnLogIn, btnSignUp;
+    Button btnLogIn, btnSignUp, btnSignup1;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
+
+        ActionBar actionBar =getSupportActionBar();
+        actionBar.hide();
 
         Linkviews();
         AddEvents();
@@ -31,6 +35,7 @@ public class LogIn extends AppCompatActivity {
         tvFogotPassword = findViewById(R.id.tv_ForgotPassword);
         btnSignUp = findViewById(R.id.btn_signup);
         btnLogIn = findViewById(R.id.btn_login);
+        btnSignup1 = findViewById(R.id.btn_signup1);
     }
 
     private void AddEvents() {
@@ -39,7 +44,14 @@ public class LogIn extends AppCompatActivity {
             public void onClick(View view) {
                 if (edtEmail.getText().length() == 0)
                     Toast.makeText(LogIn.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
-                else startActivity(new Intent(LogIn.this, MainActivity.class));
+                else startActivity(new Intent(LogIn.this, navigation.class));
+            }
+        });
+
+        btnSignup1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LogIn.this, SignUp.class));
             }
         });
 

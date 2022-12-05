@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.models.Product;
-import com.example.mytest.All_product;
+import com.example.thegodzilla_app.All_product;
 import com.example.thegodzilla_app.R;
 
 

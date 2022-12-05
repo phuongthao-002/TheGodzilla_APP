@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.models.TranInf;
 import com.example.thegodzilla_app.databinding.ActivityAddressBinding;
 
 public class address extends AppCompatActivity {
@@ -23,18 +24,25 @@ public class address extends AppCompatActivity {
         binding = ActivityAddressBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+
         binding.btnAddressDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent i = new Intent(address.this,checkout.class);
-//
+                Intent i = new Intent(address.this,checkout.class);
+                String Inf1 = binding.edtAddressName.getText().toString().trim();
+                String Inf2 = binding.edtAddressPhone.getText().toString().trim();
+                String Inf3 = binding.edtAddressWard.getText().toString().trim();
+                String Inf4 = binding.edtAddressStreet.getText().toString().trim();
+
+                TranInf.AddressInf = Inf1 + ", " + Inf2 + ", " + Inf3 + ", " + Inf4;
+////
 //                i.putExtra("name", binding.edtAddressName.getText().toString());
 //                i.putExtra("phone", binding.edtAddressPhone.getText().toString());
 //                i.putExtra("ward", binding.edtAddressWard.getText().toString());
 //                i.putExtra("street", binding.edtAddressWard.getText().toString());
 //                i.putExtra("type", binding.btnAddressHomeOffice.getText().toString());
-
 //                laucher.launch(i);
+                startActivity(i);
             }
         });
 

@@ -10,7 +10,7 @@
         android:layout_width="331dp"
         android:layout_height="104dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo_den" />
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
@@ -97,7 +97,7 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
-            android:textSize="13sp"
+            android:textSize="17sp"
             android:textStyle="bold"
             android:textColor="@color/black">
 
@@ -107,7 +107,7 @@
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:backgroundTint="@color/black"
-            android:text="Log In"
+            android:text="Confirm"
             android:layout_marginTop="20dp"
             android:layout_marginRight="30dp"
             android:layout_marginLeft="30dp"

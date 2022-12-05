@@ -5,11 +5,11 @@ public class Wishlist_models {
     int productThumb;
     String productName,productPrice,productSold;
 
-    public Wishlist_models(int productThumb, String productName, String productPrice, String productSold) {
+    public Wishlist_models(int productThumb, String productName, String productPrice) {
         this.productThumb = productThumb;
         this.productName = productName;
         this.productPrice = productPrice;
-        this.productSold = productSold;
+//        this.productSold = productSold;
     }
 
     public int getProductThumb() {
@@ -36,11 +36,11 @@ public class Wishlist_models {
         this.productPrice = productPrice;
     }
 
-    public String getProductSold() {
-        return productSold;
-    }
-
-    public void setProductSold(String productSold) {
-        this.productSold = productSold;
-    }
+//    public String getProductSold() {
+//        return productSold;
+//    }
+//
+//    public void setProductSold(String productSold) {
+//        this.productSold = productSold;
+//    }
 }

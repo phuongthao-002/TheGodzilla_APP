@@ -1,5 +1,7 @@
 package com.example.thegodzilla_app;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
@@ -7,14 +9,16 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.Interface.MyBtnVoucherClick;
-import com.example.Interface.adapter.checkout_adapter;
-import com.example.Interface.adapter.voucher_adapter;
+import com.example.adapter.checkout_adapter;
+import com.example.adapter.voucher_adapter;
 import com.example.models.Product1;
+import com.example.models.TranInf;
 import com.example.models.Vouchers;
 import com.example.thegodzilla_app.databinding.ActivityCheckoutBinding;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -33,18 +37,31 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
         //setContentView(R.layout.activity_checkout);
         binding = ActivityCheckoutBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        binding.txtCheckoutAddress.setText(TranInf.AddressInf);
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar_checkout);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         loadData();
         addEvent();
+
+//        Intent i = getIntent();
+//        binding.txtCheckoutAddress.getText(i.getStringExtra("name"));
+
+
     }
 
     private void addEvent()
     {
-        binding.btnBackhome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+//        binding.btnBackhome.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                finish();
+//            }
+//        });
         binding.btnEditAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view)
@@ -162,6 +179,15 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
     {
         binding.txtRedeem.setText(voucher.getTxtTitle());
         dialog.dismiss();
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                this.finish();
+                return true;
+        };
+        return super.onOptionsItemSelected(item);
     }
 
 

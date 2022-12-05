@@ -2,15 +2,7 @@ package com.example.thegodzilla_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
-
-import com.example.mytest.All_product;
-import com.example.mytest.ui.HomeFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void addEvent() {
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
+//        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
 //        imbSearch.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {

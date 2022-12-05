@@ -12,9 +12,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.Interface.MyItemClick;
 import com.example.models.Product;
-import com.example.mytest.fragments.DetailFragment;
-import com.example.mytest.fragments.GridProductFragment;
-import com.example.mytest.fragments.ListProductFragment;
+import com.example.fragment.DetailFragment;
+import com.example.fragment.GridProductFragment;
+import com.example.fragment.ListProductFragment;
 import com.example.thegodzilla_app.R;
 import com.example.utils.Constant;
 import com.google.android.material.bottomsheet.BottomSheetDialog;

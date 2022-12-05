@@ -1,5 +1,6 @@
 package com.example.thegodzilla_app;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 
 public class SignUp extends AppCompatActivity {
 
-    Button btnSignUp;
+    Button btnSignUp, btnLogin1;
     CheckBox cbAccept;
     EditText edtLastname, edtFirstname, edtEmail, edtPassword;
 
@@ -20,6 +21,9 @@ public class SignUp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+
+        ActionBar actionBar =getSupportActionBar();
+        actionBar.hide();
 
         LinkView();
         AddEvents();
@@ -32,6 +36,7 @@ public class SignUp extends AppCompatActivity {
         edtLastname = findViewById(R.id.edt_lastname);
         edtEmail = findViewById(R.id.edt_email);
         edtPassword = findViewById(R.id.edt_password);
+        btnLogin1 = findViewById(R.id.btn_login_1);
 
 
     }
@@ -44,7 +49,14 @@ public class SignUp extends AppCompatActivity {
                     Toast.makeText(SignUp.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
                 else if(!cbAccept.isChecked())
                     Toast.makeText(SignUp.this, "You have to accept terms of use to signing up!", Toast.LENGTH_SHORT).show();
-                else startActivity(new Intent(SignUp.this, MainActivity.class));
+                else startActivity(new Intent(SignUp.this, navigation.class));
+            }
+        });
+
+        btnLogin1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SignUp.this, LogIn.class));
             }
         });
     }

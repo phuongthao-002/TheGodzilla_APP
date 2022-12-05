@@ -1,5 +1,6 @@
 package com.example.thegodzilla_app;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -22,6 +23,9 @@ public class confirm_OPT extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm_opt);
 
+        ActionBar actionBar =getSupportActionBar();
+        actionBar.hide();
+
         LinkViews();
         AddEvents();
     }
@@ -38,7 +42,7 @@ public class confirm_OPT extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (edtOTP.getText().length() == 0 || edtPassword.getText().length() == 0 || edtConfirm.getText().length() == 0) Toast.makeText(confirm_OPT.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
-                else startActivity(new Intent(confirm_OPT.this,MainActivity.class));
+                else startActivity(new Intent(confirm_OPT.this,LogIn.class));
             }
         });
         txtBack.setOnClickListener(new View.OnClickListener() {

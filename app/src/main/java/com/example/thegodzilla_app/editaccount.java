@@ -2,12 +2,15 @@ package com.example.thegodzilla_app;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.example.thegodzilla_app.databinding.ActivityEditaccountBinding;
@@ -21,6 +24,12 @@ public class editaccount extends AppCompatActivity {
         //setContentView(R.layout.activity_editaccount);
         binding = ActivityEditaccountBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+        getSupportActionBar().setCustomView(R.layout.action_bar_editaccount);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
         launcher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
             if (result.getResultCode() == RESULT_OK && result.getData()!= null)
             {
@@ -30,6 +39,15 @@ public class editaccount extends AppCompatActivity {
         });
         addEvent();
 
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case android.R.id.home:
+                this.finish();
+                return true;
+        };
+        return super.onOptionsItemSelected(item);
     }
 
     private void addEvent() {
@@ -57,12 +75,12 @@ public class editaccount extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        binding.btnBackhome.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                finish();
-            }
-        });
+//        binding.btnBackhome.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                finish();
+//            }
+//        });
     }
 }
