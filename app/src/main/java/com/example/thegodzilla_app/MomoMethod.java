@@ -9,9 +9,12 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
-public class momomethod extends AppCompatActivity {
+public class MomoMethod extends AppCompatActivity {
     Button btnContinueMomo;
+    EditText edt_num;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,13 +33,18 @@ public class momomethod extends AppCompatActivity {
         btnContinueMomo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(momomethod.this, CheckOut.class));
+                if (edt_num.getText().length() == 0)
+                    Toast.makeText(MomoMethod.this, "You must fill in all the information to continue!", Toast.LENGTH_SHORT).show();
+                else startActivity(new Intent(MomoMethod.this, CheckOut.class));
+//                startActivity(new Intent(momomethod.this, checkout.class));
             }
         });
     }
 
     private void linkView() {
+        edt_num = findViewById(R.id.edt_momo_num);
         btnContinueMomo = findViewById(R.id.btn_momo_continue);
+
     }
 
     @Override

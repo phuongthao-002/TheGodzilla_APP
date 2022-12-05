@@ -110,14 +110,14 @@ public class CheckOut extends AppCompatActivity implements MyBtnVoucherClick
         binding.btnMomo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CheckOut.this,momomethod.class);
+                Intent intent = new Intent(CheckOut.this, MomoMethod.class);
                 startActivity(intent);
             }
         });
         binding.btnPaymentmethod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CheckOut.this,paymentmethod.class);
+                Intent intent = new Intent(CheckOut.this, Paymentmethod.class);
                 startActivity(intent);
             }
         });
@@ -125,7 +125,7 @@ public class CheckOut extends AppCompatActivity implements MyBtnVoucherClick
         binding.btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CheckOut.this,ordersuccess.class);
+                Intent intent = new Intent(CheckOut.this, OrderSuccess.class);
                 startActivity(intent);
             }
         });

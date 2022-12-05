@@ -44,7 +44,7 @@ public class LogIn extends AppCompatActivity {
             public void onClick(View view) {
                 if (edtEmail.getText().length() == 0)
                     Toast.makeText(LogIn.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
-                else startActivity(new Intent(LogIn.this, navigation.class));
+                else startActivity(new Intent(LogIn.this, Navigation.class));
             }
         });
 
@@ -58,7 +58,7 @@ public class LogIn extends AppCompatActivity {
         tvFogotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LogIn.this, forgot_pwd.class));
+                startActivity(new Intent(LogIn.this, Forgot_pwd.class));
             }
         });
         btnSignUp.setOnClickListener(new View.OnClickListener() {

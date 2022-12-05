@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".zalopaymethod"
+    tools:context=".ZalopayMethod"
     android:orientation="vertical"
     android:padding="20dp">
 
@@ -54,7 +54,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"></EditText>
+        tools:ignore="MissingConstraints">
+    </EditText>
 
     <Button
         android:id="@+id/btn_zalo_continue"

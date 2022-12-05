@@ -20,13 +20,8 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".navigation"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:name=".SignUp"
+            android:exported="false">
 
 
             <meta-data
@@ -48,21 +43,13 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SplashScreen"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".SignUp"
-            android:exported="true">
 
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
         <activity
             android:name=".Wishlist"
             android:exported="false">
@@ -71,7 +58,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".zalopaymethod"
+            android:name=".ZalopayMethod"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -85,7 +72,19 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ordersuccess"
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".OrderSuccess"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -93,8 +92,7 @@
         </activity>
         <activity
             android:name=".MyPurchase"
-            android:exported="true">
-
+            android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -107,21 +105,21 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".momomethod"
+            android:name=".MomoMethod"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-<!--        <activity-->
-<!--            android:name=".splash_screen"-->
-<!--            android:exported="true">-->
-<!--            <meta-data-->
-<!--                android:name="android.app.lib_name"-->
-<!--                android:value="" />-->
-<!--        </activity>-->
         <activity
-            android:name=".forgot_pwd"
+            android:name=".CheckOut"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Forgot_pwd"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -142,15 +140,8 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".confirm_OPT"
+            android:name=".ConfirmOPT"
             android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".CheckOut"
-            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -163,7 +154,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".paymentmethod"
+            android:name=".Paymentmethod"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -177,14 +168,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Navigation"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".credit_debit_card"
+            android:name=".CreditDebitCard"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

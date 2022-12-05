@@ -9,9 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class forgot_pwd extends AppCompatActivity {
+public class Forgot_pwd extends AppCompatActivity {
 
     EditText edtEmailorPhone;
     Button btnResetPwd;
@@ -40,7 +39,7 @@ public class forgot_pwd extends AppCompatActivity {
 //                if (edtEmailorPhone.getText().length() == 0)
 //                    Toast.makeText(forgot_pwd.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
 //                else
-                startActivity(new Intent(forgot_pwd.this,confirm_OPT.class));
+                startActivity(new Intent(Forgot_pwd.this, ConfirmOPT.class));
             }
         });
         txtBackto.setOnClickListener(new View.OnClickListener() {

@@ -12,7 +12,7 @@ import android.view.MenuItem;
 import com.example.fragment.AdapterViewPager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class navigation extends AppCompatActivity {
+public class Navigation extends AppCompatActivity {
     private ViewPager viewPager;
     private BottomNavigationView bottomNavigationView;
 

@@ -49,7 +49,7 @@ public class SignUp extends AppCompatActivity {
                     Toast.makeText(SignUp.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
                 else if(!cbAccept.isChecked())
                     Toast.makeText(SignUp.this, "You have to accept terms of use to signing up!", Toast.LENGTH_SHORT).show();
-                else startActivity(new Intent(SignUp.this, navigation.class));
+                else startActivity(new Intent(SignUp.this, Navigation.class));
             }
         });
 

@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class confirm_OPT extends AppCompatActivity {
+public class ConfirmOPT extends AppCompatActivity {
 
     EditText edtOTP, edtPassword, edtConfirm;
     Button btnLogIn;
@@ -41,8 +41,8 @@ public class confirm_OPT extends AppCompatActivity {
         btnLogIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (edtOTP.getText().length() == 0 || edtPassword.getText().length() == 0 || edtConfirm.getText().length() == 0) Toast.makeText(confirm_OPT.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
-                else startActivity(new Intent(confirm_OPT.this,LogIn.class));
+                if (edtOTP.getText().length() == 0 || edtPassword.getText().length() == 0 || edtConfirm.getText().length() == 0) Toast.makeText(ConfirmOPT.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
+                else startActivity(new Intent(ConfirmOPT.this,LogIn.class));
             }
         });
         txtBack.setOnClickListener(new View.OnClickListener() {

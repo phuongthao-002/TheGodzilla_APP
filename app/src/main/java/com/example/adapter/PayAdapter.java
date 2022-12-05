@@ -9,17 +9,17 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.models.pay;
+import com.example.models.Pay;
 import com.example.thegodzilla_app.R;
 
 import java.util.List;
 
-public class payadapter extends BaseAdapter {
+public class PayAdapter extends BaseAdapter {
     Activity activity;
     int item_layout;
-    List<pay> pays;
+    List<Pay> pays;
 
-    public payadapter(Activity activity, int item_layout, List<pay> pays) {
+    public PayAdapter(Activity activity, int item_layout, List<Pay> pays) {
         this.activity = activity;
         this.item_layout = item_layout;
         this.pays = pays;
@@ -55,7 +55,7 @@ public class payadapter extends BaseAdapter {
             holder = (ViewHolder) view.getTag();
         }
         //binding data
-        pay b = pays.get(i);
+        Pay b = pays.get(i);
         holder.paymethThumb.setImageResource(b.getPaymeThumb());
         holder.paymethName.setText(b.getPaymeName());
         return view;

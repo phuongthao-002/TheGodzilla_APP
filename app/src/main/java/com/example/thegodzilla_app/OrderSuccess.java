@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ordersuccess extends AppCompatActivity {
+public class OrderSuccess extends AppCompatActivity {
     Button btnCheckOrder, btnBacktoHome;
 
     @Override
@@ -27,13 +27,13 @@ public class ordersuccess extends AppCompatActivity {
         btnCheckOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ordersuccess.this, MyPurchase.class));
+                startActivity(new Intent(OrderSuccess.this, MyPurchase.class));
             }
         });
         btnBacktoHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ordersuccess.this, navigation.class));
+                startActivity(new Intent(OrderSuccess.this, Navigation.class));
             }
         });
     }

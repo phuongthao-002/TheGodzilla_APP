@@ -1,10 +1,10 @@
 package com.example.models;
 
-public class pay {
+public class Pay {
     int paymeThumb;
     String paymeName;
 
-    public pay(int paymeThumb, String paymeName) {
+    public Pay(int paymeThumb, String paymeName) {
         this.paymeThumb = paymeThumb;
         this.paymeName = paymeName;
     }
