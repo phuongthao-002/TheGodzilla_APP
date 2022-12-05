@@ -26,7 +26,7 @@
             android:backgroundTint="#FFFFFF"
             android:gravity="center"
             android:text="Sign Up"
-
+            android:fontFamily="@font/nunito_extrabold"
             android:textColor="#000000"
             android:textSize="20sp" />
 
@@ -37,6 +37,7 @@
             android:backgroundTint="#FFFFFF"
             android:gravity="center"
             android:text="Log In"
+            android:fontFamily="@font/nunito_extrabold"
             android:textColor="#B8ADAD"
             android:textSize="20sp" />
 
@@ -73,6 +74,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/duongvien_goctron"
+        android:fontFamily="@font/nunito_mediuitalic"
         android:hint="@string/first"
         android:inputType="textPersonName"
         android:textColor="#757575"
@@ -88,6 +90,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/duongvien_goctron"
+        android:fontFamily="@font/nunito_mediuitalic"
         android:hint="@string/last"
         android:inputType="textPersonName"
         android:textColor="#757575"
@@ -118,6 +121,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/duongvien_goctron"
+        android:fontFamily="@font/nunito_mediuitalic"
         android:hint="@string/password"
         android:inputType="textPassword"
         android:textColor="#757575"
@@ -143,6 +147,7 @@
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:text="I accept the Term of Service and Privacy Policy."
+            android:fontFamily="@font/nunito_mediuitalic"
             android:textSize="15sp"
             android:textStyle="italic"
             android:textColor="#000000"
@@ -154,6 +159,7 @@
         android:layout_height="50dp"
         android:backgroundTint="@color/black"
         android:text="sign up"
+        android:fontFamily="@font/nunito_extrabold"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:textSize="18sp">
@@ -176,6 +182,7 @@
         android:layout_marginLeft="30dp"
         android:text="Continue with Google"
         android:drawableLeft="@drawable/google"
+        android:fontFamily="@font/nunito_medium"
         android:backgroundTint="@color/cardview_light_background"
         android:textColor="@color/black"
         android:textSize="15sp">
@@ -189,6 +196,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"
         android:text="Continue with Facebook"
+        android:fontFamily="@font/nunito_medium"
         android:drawableLeft="@drawable/faceb"
         android:backgroundTint="@color/cardview_light_background"
         android:textColor="@color/black"
