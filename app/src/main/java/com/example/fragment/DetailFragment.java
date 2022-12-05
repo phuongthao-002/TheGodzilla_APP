@@ -28,7 +28,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 public class DetailFragment extends Fragment {
     Product p;
     Button btnAddToCart,btnBuyNow;
-    ImageView imvBack;
+    ImageView imvBack,imvHeart;
     TextView txtName,txtPrice,txtType,txtSize, txtDescription;
     ImageView imvThumb;
     GridView gvSize;
@@ -100,6 +100,16 @@ public class DetailFragment extends Fragment {
 
                 }
             });
+
+        imvHeart = view.findViewById(R.id.imvHeart);
+
+        imvHeart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(),"Thêm vào WishList thành công",Toast.LENGTH_LONG).show();
+
+            }
+        });
 
 
         txtSize = view.findViewById(R.id.txtViewSizeGuide);
