@@ -41,7 +41,7 @@ public class notification extends Fragment {
         notifiArrayList = new ArrayList<>();
 
         notifiArrayList.add(new Notifi(R.drawable.mint, "Your order #28072002 has been confirmed"));
-        notifiArrayList.add(new Notifi(R.drawable.airjordan, "Your order 09102002 has been confirmed"));
+        notifiArrayList.add(new Notifi(R.drawable.airjordan, "Your order #09102002 has been confirmed"));
 
         adapter = new NotifiAdapter(getContext(),R.layout.item_notification, notifiArrayList);
         lv_notifi.setAdapter(adapter);
