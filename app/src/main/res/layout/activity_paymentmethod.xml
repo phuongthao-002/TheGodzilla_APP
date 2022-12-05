@@ -8,15 +8,15 @@
     android:orientation="vertical"
    >
 
-      <com.google.android.material.bottomnavigation.BottomNavigationView
+<!--      <com.google.android.material.bottomnavigation.BottomNavigationView-->
 
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-          android:layout_alignParentBottom="true"
-            app:menu="@menu/action_bar_bottom_nav"
-        app:itemBackground="@color/black"
-       app:itemTextColor="@color/custom_color_bottom_nav"
-        app:itemIconTint="@color/custom_color_bottom_nav"/>
+<!--         android:layout_width="match_parent"-->
+<!--         android:layout_height="wrap_content"-->
+<!--          android:layout_alignParentBottom="true"-->
+<!--            app:menu="@menu/action_bar_bottom_nav"-->
+<!--        app:itemBackground="@color/black"-->
+<!--       app:itemTextColor="@color/custom_color_bottom_nav"-->
+<!--        app:itemIconTint="@color/custom_color_bottom_nav"/>-->
     <ListView
         android:padding="10dp"
         android:id="@+id/lv_pay_method"

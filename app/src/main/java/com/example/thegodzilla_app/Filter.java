@@ -3,10 +3,9 @@ package com.example.thegodzilla_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageButton;
 
-import com.example.mytest.fragments.SearchFragment;
+import com.example.mytest.ui.SearchFragment;
 
     public class Filter extends AppCompatActivity {
         ImageButton imbBackFilter;

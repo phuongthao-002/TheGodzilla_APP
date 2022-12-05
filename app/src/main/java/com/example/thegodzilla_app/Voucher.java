@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.Interface.adapter.voucher_adapter;
+import com.example.adapter.voucher_adapter;
 import com.example.models.Vouchers;
 
 import java.util.ArrayList;

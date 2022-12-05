@@ -1,4 +1,4 @@
-package com.example.Interface.adapter;
+package com.example.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -9,30 +9,31 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.models.pay;
+import com.example.models.Notifi;
 import com.example.thegodzilla_app.R;
 
 import java.util.List;
 
-public class payadapter extends BaseAdapter {
+public class NotifiAdapter extends BaseAdapter {
     Activity activity;
     int item_layout;
-    List<pay> pays;
+    List<Notifi> notifis;
 
-    public payadapter(Activity activity, int item_layout, List<pay> pays) {
+    public NotifiAdapter(Activity activity, int item_layout, List<Notifi> notifis) {
         this.activity = activity;
         this.item_layout = item_layout;
-        this.pays = pays;
+        this.notifis = notifis;
     }
+
 
     @Override
     public int getCount() {
-        return pays.size();
+        return notifis.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return pays.get(i);
+        return notifis.get(i);
     }
 
     @Override
@@ -43,25 +44,28 @@ public class payadapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         ViewHolder holder;
-        if (view ==null){
-            //link view
+        if(view == null) {
             holder = new ViewHolder();
             LayoutInflater inflater = (LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            view = inflater.inflate(item_layout, null);
-            holder.paymethThumb = view.findViewById(R.id.imv_paymethod_Thumb);
-            holder.paymethName = view.findViewById(R.id.txt_paymethod_Name);
+            view = inflater.inflate(item_layout,null);
+            holder.notifiThumb = view.findViewById(R.id.imv_Notifi_Thumb);
+            holder.notifiStatus = view.findViewById(R.id.txt_Notifi_Status);
             view.setTag(holder);
-        }else {
+        } else
+
+        {
             holder = (ViewHolder) view.getTag();
         }
-        //binding data
-        pay b = pays.get(i);
-        holder.paymethThumb.setImageResource(b.getPaymeThumb());
-        holder.paymethName.setText(b.getPaymeName());
+        Notifi n = notifis.get(i);
+        holder.notifiThumb.setImageResource(n.getNotifiThumb());
+        holder.notifiStatus.setText(n.getNotifiStatus());
+
         return view;
     }
-    public static class ViewHolder{
-        ImageView paymethThumb;
-        TextView paymethName;
+    public class ViewHolder{
+        ImageView notifiThumb;
+        TextView notifiStatus;
+
+
     }
 }

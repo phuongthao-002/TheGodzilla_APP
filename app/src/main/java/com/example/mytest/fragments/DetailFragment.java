@@ -31,7 +31,7 @@ public class DetailFragment extends Fragment {
     Button btnAddToCart,btnBuyNow;
     ImageView imvBack;
     TextView txtName,txtPrice,txtType,txtSize, txtDescription;
-    ImageView imvThumb;
+    ImageView imvThumb,imvHeart;
     GridView gvSize;
     View.OnClickListener OpenBuy;
     @Override
@@ -53,6 +53,7 @@ public class DetailFragment extends Fragment {
         txtType = view.findViewById(R.id.txtType);
         txtDescription = view.findViewById(R.id.txtDescription);
         imvThumb = view.findViewById(R.id.imvThumb);
+        imvHeart = view.findViewById(R.id.imvHeart);
         gvSize = view.findViewById(R.id.gvSize);
         OpenBuy = new View.OnClickListener() {
             @Override
@@ -60,6 +61,13 @@ public class DetailFragment extends Fragment {
                 startActivity(new Intent(getContext(), cart.class));
             }
         };
+        imvHeart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getContext(),"Thêm vào WishList thành công",Toast.LENGTH_LONG).show();
+
+            }
+        });
         btnBuyNow = view.findViewById(R.id.btnBuyDetail);
         btnBuyNow.setOnClickListener(OpenBuy);
         OpenBuy = new View.OnClickListener() {

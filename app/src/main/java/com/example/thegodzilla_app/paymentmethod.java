@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.Interface.adapter.payadapter;
+import com.example.adapter.payadapter;
 import com.example.models.pay;
 import com.example.thegodzilla_app.databinding.ActivityPaymentmethodBinding;
 
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class paymentmethod extends AppCompatActivity {
     ActivityPaymentmethodBinding binding;
-    com.example.Interface.adapter.payadapter payadapter;
+    com.example.adapter.payadapter payadapter;
     ArrayList<pay> payArrayList;
 
 

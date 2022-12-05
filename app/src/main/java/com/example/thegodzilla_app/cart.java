@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.Interface.adapter.cart_adapter;
+import com.example.adapter.cart_adapter;
 import com.example.models.Productcart;
 import com.example.thegodzilla_app.databinding.ActivityCartBinding;
 

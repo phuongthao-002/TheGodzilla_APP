@@ -1,4 +1,4 @@
-package com.example.Interface.adapter;
+package com.example.adapter;
 
 import android.app.Activity;
 import android.content.Context;
@@ -49,10 +49,9 @@ public class Wishlist_Product extends BaseAdapter {
             holder=new ViewHolder();
             LayoutInflater inflater=(LayoutInflater) activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             view = inflater.inflate(item_wishlist,null);
-            holder.imvThumb = view.findViewById(R.id.imv_Shoes);
-            holder.txtname=view.findViewById(R.id.txt_Name);
-            holder.txtprice=view.findViewById(R.id.txt_Price);
-            holder.txtsold=view.findViewById(R.id.txt_Sold);
+            holder.imvThumb = view.findViewById(R.id.imvThumb1);
+            holder.txtname=view.findViewById(R.id.txtName1);
+            holder.txtprice=view.findViewById(R.id.txtPrice1);
             view.setTag(holder);
         }
         else
@@ -65,7 +64,6 @@ public class Wishlist_Product extends BaseAdapter {
         holder.imvThumb.setImageResource(b.getProductThumb());
         holder.txtname.setText(b.getProductName());
         holder.txtprice.setText(b.getProductPrice());
-        holder.txtsold.setText(b.getProductSold());
         return view;
 
 

@@ -9,7 +9,6 @@ public class Wishlist_models {
         this.productThumb = productThumb;
         this.productName = productName;
         this.productPrice = productPrice;
-        this.productSold = productSold;
     }
 
     public int getProductThumb() {
@@ -36,11 +35,5 @@ public class Wishlist_models {
         this.productPrice = productPrice;
     }
 
-    public String getProductSold() {
-        return productSold;
-    }
 
-    public void setProductSold(String productSold) {
-        this.productSold = productSold;
-    }
 }
