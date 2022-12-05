@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.adapter.purchase_adapter;
+import com.example.adapter.PurchaseAdapter;
 import com.example.models.Mypurchase;
 import com.example.thegodzilla_app.databinding.ActivityMypurchaseBinding;
 
@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class MyPurchase extends AppCompatActivity {
     ActivityMypurchaseBinding binding;
-    purchase_adapter adapter;
+    PurchaseAdapter adapter;
     ArrayList<Mypurchase> puchaselist;
 
 
@@ -56,7 +56,7 @@ public class MyPurchase extends AppCompatActivity {
         puchaselist.add(new Mypurchase(R.drawable.logonike_voucher,"Sneaker1","To pay","Pay now"));
         puchaselist.add(new Mypurchase(R.drawable.logoconverse,"Sneaker2","To ship","Contact"));
         puchaselist.add(new Mypurchase(R.drawable.logoconverse,"Sneaker3","Complete","Rate"));
-        adapter =new purchase_adapter(MyPurchase.this,R.layout.item_mypurchase_list,puchaselist);
+        adapter =new PurchaseAdapter(MyPurchase.this,R.layout.item_mypurchase_list,puchaselist);
         binding.lvPurchase.setAdapter(adapter);
     }
     @Override

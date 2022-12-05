@@ -15,8 +15,8 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.example.Interface.MyBtnVoucherClick;
-import com.example.adapter.checkout_adapter;
-import com.example.adapter.voucher_adapter;
+import com.example.adapter.CheckoutAdapter;
+import com.example.adapter.VoucherAdapter;
 import com.example.models.Product1;
 import com.example.models.TranInf;
 import com.example.models.Vouchers;
@@ -28,7 +28,7 @@ import java.util.ArrayList;
 public class CheckOut extends AppCompatActivity implements MyBtnVoucherClick
 {
     ActivityCheckoutBinding binding;
-    checkout_adapter adapter;
+    CheckoutAdapter adapter;
     ArrayList<Product1> product1s;
     BottomSheetDialog dialog;
     @Override
@@ -79,13 +79,13 @@ public class CheckOut extends AppCompatActivity implements MyBtnVoucherClick
                 dialog = new BottomSheetDialog(CheckOut.this);
                 dialog.setContentView(R.layout.layout_popup_myvoucher);
                 ListView lvVoucher = dialog.findViewById(R.id.lvMyvoucherPopUp);
-                voucher_adapter adapter;
+                VoucherAdapter adapter;
                 ArrayList<Vouchers> vouchers;
                 vouchers = new ArrayList<>();
                 vouchers.add(new Vouchers(R.drawable.logoconverse,"CONVERSE","BUY 1 GET 1"));
                 vouchers.add(new Vouchers(R.drawable.logobalenciaga,"BALENCIAGA","Sale off 10%"));
                 vouchers.add(new Vouchers(R.drawable.logonike_voucher,"NIKE","Sale off 10% "));
-                adapter = new voucher_adapter(CheckOut.this,R.layout.item_voucher_list,vouchers);
+                adapter = new VoucherAdapter(CheckOut.this,R.layout.item_voucher_list,vouchers);
                 lvVoucher.setAdapter(adapter);
                 dialog.show();
             }
@@ -169,7 +169,7 @@ public class CheckOut extends AppCompatActivity implements MyBtnVoucherClick
         product1s = new ArrayList<>();
         product1s.add(new Product1(R.drawable.puma,"Puma","Shoes fashion","180000","2"));
         product1s.add(new Product1(R.drawable.logoconverse,"Converse","Shoes fashion","190000","3"));
-        adapter = new checkout_adapter(CheckOut.this,R.layout.item_checkout_list, product1s);
+        adapter = new CheckoutAdapter(CheckOut.this,R.layout.item_checkout_list, product1s);
         binding.lvproductCheckout.setAdapter(adapter);
     }
 
