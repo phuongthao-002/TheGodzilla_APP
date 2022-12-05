@@ -27,7 +27,7 @@ public class ordersuccess extends AppCompatActivity {
         btnCheckOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ordersuccess.this, mypurchase.class));
+                startActivity(new Intent(ordersuccess.this, MyPurchase.class));
             }
         });
         btnBacktoHome.setOnClickListener(new View.OnClickListener() {

@@ -16,13 +16,13 @@ import com.example.thegodzilla_app.Voucher;
 
 import java.util.ArrayList;
 
-public class voucher_adapter extends BaseAdapter
+public class VoucherAdapter extends BaseAdapter
 {
     Context context;
     int item_layout;
     ArrayList<Vouchers> vouchers;
 
-    public voucher_adapter(Context context, int item_layout, ArrayList<Vouchers> vouchers) {
+    public VoucherAdapter(Context context, int item_layout, ArrayList<Vouchers> vouchers) {
         this.context = context;
         this.item_layout = item_layout;
         this.vouchers = vouchers;

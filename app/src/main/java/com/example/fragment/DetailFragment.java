@@ -20,7 +20,7 @@ import androidx.fragment.app.Fragment;
 import com.example.adapter.PopupSizeAdapter;
 import com.example.models.Product;
 import com.example.thegodzilla_app.R;
-import com.example.thegodzilla_app.checkout;
+import com.example.thegodzilla_app.CheckOut;
 import com.example.utils.Constant;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
@@ -58,7 +58,7 @@ public class DetailFragment extends Fragment {
         btnBuyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getContext(), checkout.class));
+                startActivity(new Intent(getContext(), CheckOut.class));
             }
         });
 

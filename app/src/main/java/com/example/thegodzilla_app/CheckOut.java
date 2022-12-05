@@ -25,7 +25,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.ArrayList;
 
-public class checkout extends AppCompatActivity implements MyBtnVoucherClick
+public class CheckOut extends AppCompatActivity implements MyBtnVoucherClick
 {
     ActivityCheckoutBinding binding;
     checkout_adapter adapter;
@@ -66,7 +66,7 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(checkout.this,address.class);
+                Intent intent = new Intent(CheckOut.this,address.class);
                 startActivity(intent);
 
             }
@@ -76,7 +76,7 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
             @Override
             public void onClick(View view)
             {
-                dialog = new BottomSheetDialog(checkout.this);
+                dialog = new BottomSheetDialog(CheckOut.this);
                 dialog.setContentView(R.layout.layout_popup_myvoucher);
                 ListView lvVoucher = dialog.findViewById(R.id.lvMyvoucherPopUp);
                 voucher_adapter adapter;
@@ -85,7 +85,7 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
                 vouchers.add(new Vouchers(R.drawable.logoconverse,"CONVERSE","BUY 1 GET 1"));
                 vouchers.add(new Vouchers(R.drawable.logobalenciaga,"BALENCIAGA","Sale off 10%"));
                 vouchers.add(new Vouchers(R.drawable.logonike_voucher,"NIKE","Sale off 10% "));
-                adapter = new voucher_adapter(checkout.this,R.layout.item_voucher_list,vouchers);
+                adapter = new voucher_adapter(CheckOut.this,R.layout.item_voucher_list,vouchers);
                 lvVoucher.setAdapter(adapter);
                 dialog.show();
             }
@@ -94,7 +94,7 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
             @Override
             public void onClick(View view)
             {
-                Dialog dialogDelivery = new Dialog(checkout.this);
+                Dialog dialogDelivery = new Dialog(CheckOut.this);
                 dialogDelivery.setContentView(R.layout.layout_popup_delivery);
                 dialogDelivery.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 LinearLayout llStandard, llFast, ll24h;
@@ -110,14 +110,14 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
         binding.btnMomo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(checkout.this,momomethod.class);
+                Intent intent = new Intent(CheckOut.this,momomethod.class);
                 startActivity(intent);
             }
         });
         binding.btnPaymentmethod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(checkout.this,paymentmethod.class);
+                Intent intent = new Intent(CheckOut.this,paymentmethod.class);
                 startActivity(intent);
             }
         });
@@ -125,7 +125,7 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
         binding.btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(checkout.this,ordersuccess.class);
+                Intent intent = new Intent(CheckOut.this,ordersuccess.class);
                 startActivity(intent);
             }
         });
@@ -169,7 +169,7 @@ public class checkout extends AppCompatActivity implements MyBtnVoucherClick
         product1s = new ArrayList<>();
         product1s.add(new Product1(R.drawable.puma,"Puma","Shoes fashion","180000","2"));
         product1s.add(new Product1(R.drawable.logoconverse,"Converse","Shoes fashion","190000","3"));
-        adapter = new checkout_adapter(checkout.this,R.layout.item_checkout_list, product1s);
+        adapter = new checkout_adapter(CheckOut.this,R.layout.item_checkout_list, product1s);
         binding.lvproductCheckout.setAdapter(adapter);
     }
 

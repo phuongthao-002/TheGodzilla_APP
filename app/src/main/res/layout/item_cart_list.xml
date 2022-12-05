@@ -47,7 +47,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/product_detail"></TextView>>
+                    android:text="@string/product_detail"
+                    android:fontFamily="@font/nunitobold"></TextView>>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -69,6 +70,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:text="1"
+                android:fontFamily="@font/nunitobold"
                 android:gravity="center">
             </TextView>
             <ImageButton

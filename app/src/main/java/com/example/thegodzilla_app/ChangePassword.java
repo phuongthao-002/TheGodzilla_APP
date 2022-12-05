@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import com.example.thegodzilla_app.databinding.ActivityChangepasswordBinding;
 
-public class changepassword extends AppCompatActivity {
+public class ChangePassword extends AppCompatActivity {
     ActivityChangepasswordBinding binding;
 
     @Override
@@ -28,7 +28,7 @@ public class changepassword extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(changepassword.this, "Change password successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ChangePassword.this, "Change password successfully", Toast.LENGTH_SHORT).show();
             }
         });
         binding.btnBackhome.setOnClickListener(new View.OnClickListener() {

@@ -13,7 +13,7 @@ import com.example.thegodzilla_app.databinding.ActivityMypurchaseBinding;
 
 import java.util.ArrayList;
 
-public class mypurchase extends AppCompatActivity {
+public class MyPurchase extends AppCompatActivity {
     ActivityMypurchaseBinding binding;
     purchase_adapter adapter;
     ArrayList<Mypurchase> puchaselist;
@@ -56,7 +56,7 @@ public class mypurchase extends AppCompatActivity {
         puchaselist.add(new Mypurchase(R.drawable.logonike_voucher,"Sneaker1","To pay","Pay now"));
         puchaselist.add(new Mypurchase(R.drawable.logoconverse,"Sneaker2","To ship","Contact"));
         puchaselist.add(new Mypurchase(R.drawable.logoconverse,"Sneaker3","Complete","Rate"));
-        adapter =new purchase_adapter(mypurchase.this,R.layout.item_mypurchase_list,puchaselist);
+        adapter =new purchase_adapter(MyPurchase.this,R.layout.item_mypurchase_list,puchaselist);
         binding.lvPurchase.setAdapter(adapter);
     }
     @Override

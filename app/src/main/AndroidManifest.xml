@@ -48,8 +48,8 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="false">
+            android:name=".SplashScreen"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -92,7 +92,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".mypurchase"
+            android:name=".MyPurchase"
             android:exported="true">
 
             <meta-data
@@ -128,7 +128,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".My_voucher"
+            android:name=".MyVoucher"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -149,7 +149,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".editaccount"
+            android:name=".CheckOut"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".EditAccount"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -163,14 +170,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".changepassword"
+            android:name=".ChangePassword"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".checkout"
+            android:name=".MainActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

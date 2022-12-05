@@ -37,17 +37,17 @@
                         android:text="Giày Sneaker 1"
                         android:textSize="20sp"
                         android:textColor="#031824"
-                        android:textStyle="bold">
+                        android:fontFamily="@font/nunitobold">
                     </TextView>
                     <TextView
                         android:id="@+id/txt_status"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="70dp"
+                        android:layout_marginLeft="60dp"
                         android:backgroundTint="#ffffff"
                         android:text="To pay"
                         android:textSize="20sp"
-                        android:textStyle="bold"
+                        android:fontFamily="@font/nunitobold"
                         android:textColor="#0626F6"
                         android:padding="5dp">
                     </TextView>
@@ -57,6 +57,7 @@
                     android:layout_height="match_parent"
                     android:text="@string/text_size_color"
                     android:textSize="20sp"
+                    android:fontFamily="@font/nunitobold"
                     android:textColor="#000000"
                     android:padding="5dp">
                 </TextView>
@@ -72,6 +73,7 @@
                 android:text="1 Item"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/nunitobold"
                 android:layout_marginLeft="25dp">
             </TextView>
             <TextView
@@ -79,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:text="Total 102 USD"
                 android:textSize="20sp"
-                android:textStyle="bold"
+                android:fontFamily="@font/nunitobold"
                 android:layout_marginLeft="150dp">
             </TextView>
         </LinearLayout>
@@ -93,6 +95,7 @@
                 android:layout_height="50dp"
                 android:padding="10dp"
                 android:text="Pay now"
+                android:fontFamily="@font/nunitobold"
                 android:layout_marginRight="10dp"
                 android:backgroundTint="#031824">
             </Button>

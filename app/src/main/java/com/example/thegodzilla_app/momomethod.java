@@ -30,7 +30,7 @@ public class momomethod extends AppCompatActivity {
         btnContinueMomo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(momomethod.this, checkout.class));
+                startActivity(new Intent(momomethod.this, CheckOut.class));
             }
         });
     }

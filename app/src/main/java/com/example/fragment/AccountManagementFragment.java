@@ -19,8 +19,8 @@ import com.example.thegodzilla_app.LogIn;
 import com.example.thegodzilla_app.R;
 import com.example.thegodzilla_app.Wishlist;
 import com.example.thegodzilla_app.chat;
-import com.example.thegodzilla_app.editaccount;
-import com.example.thegodzilla_app.mypurchase;
+import com.example.thegodzilla_app.EditAccount;
+import com.example.thegodzilla_app.MyPurchase;
 
 public class AccountManagementFragment extends Fragment {
     Button btnLogOut, btnMyPurchase,btnNoti, btnWishList, btnChat;
@@ -45,7 +45,7 @@ public class AccountManagementFragment extends Fragment {
         OpenEditAccount = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), editaccount.class));
+                startActivity(new Intent(getContext(), EditAccount.class));
             }
         };
         imbEdit.setOnClickListener(OpenEditAccount);
@@ -53,7 +53,7 @@ public class AccountManagementFragment extends Fragment {
         OpenMyPurchase = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), mypurchase.class));
+                startActivity(new Intent(getContext(), MyPurchase.class));
             }
         };
         btnMyPurchase.setOnClickListener(OpenMyPurchase);

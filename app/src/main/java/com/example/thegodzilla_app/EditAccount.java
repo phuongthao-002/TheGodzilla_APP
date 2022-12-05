@@ -15,7 +15,7 @@ import android.view.View;
 
 import com.example.thegodzilla_app.databinding.ActivityEditaccountBinding;
 
-public class editaccount extends AppCompatActivity {
+public class EditAccount extends AppCompatActivity {
     ActivityEditaccountBinding binding;
     ActivityResultLauncher<Intent> launcher;
     @Override
@@ -64,14 +64,14 @@ public class editaccount extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(editaccount.this,address.class);
+                Intent intent = new Intent(EditAccount.this,address.class);
                 startActivity(intent);
             }
         });
         binding.btnPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(editaccount.this,changepassword.class);
+                Intent intent = new Intent(EditAccount.this, ChangePassword.class);
                 startActivity(intent);
             }
         });

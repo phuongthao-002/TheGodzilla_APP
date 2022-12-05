@@ -1,6 +1,5 @@
 package com.example.adapter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,20 +8,17 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.models.Productcart;
 import com.example.thegodzilla_app.R;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class cart_adapter extends BaseAdapter {
+public class CartAdapter extends BaseAdapter {
  Context context;
  int item_layput;
  List<Productcart> productcarts;
 
-    public cart_adapter(Context context, int item_layput, List<Productcart> productcarts) {
+    public CartAdapter(Context context, int item_layput, List<Productcart> productcarts) {
         this.context = context;
         this.item_layput = item_layput;
         this.productcarts = productcarts;

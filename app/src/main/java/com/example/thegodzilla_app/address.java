@@ -1,6 +1,5 @@
 package com.example.thegodzilla_app;
 
-import androidx.activity.result.ActivityResultLauncher;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,7 +27,7 @@ public class address extends AppCompatActivity {
         binding.btnAddressDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(address.this,checkout.class);
+                Intent i = new Intent(address.this, CheckOut.class);
                 String Inf1 = binding.edtAddressName.getText().toString().trim();
                 String Inf2 = binding.edtAddressPhone.getText().toString().trim();
                 String Inf3 = binding.edtAddressWard.getText().toString().trim();

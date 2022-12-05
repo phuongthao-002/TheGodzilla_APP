@@ -8,16 +8,16 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.adapter.voucher_adapter;
+import com.example.adapter.VoucherAdapter;
 import com.example.models.Vouchers;
 
 import java.util.ArrayList;
 
-public class My_voucher extends AppCompatActivity implements com.example.Interface.MyBtnVoucherClick {
+public class MyVoucher extends AppCompatActivity implements com.example.Interface.MyBtnVoucherClick {
 
     Button btnback;
     ListView lvVouchers;
-    voucher_adapter adapter;
+    VoucherAdapter adapter;
     ArrayList<Vouchers> vouchers;
 
     @Override
@@ -40,7 +40,7 @@ public class My_voucher extends AppCompatActivity implements com.example.Interfa
     }
 
     private void loadData() {
-        adapter = new voucher_adapter(this, R.layout.item_voucher_list, vouchers);
+        adapter = new VoucherAdapter(this, R.layout.item_voucher_list, vouchers);
         lvVouchers.setAdapter(adapter);
     }
 

@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.example.adapter.voucher_adapter;
+import com.example.adapter.VoucherAdapter;
 import com.example.models.Vouchers;
 
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class Voucher extends AppCompatActivity
 {
     Button btnback;
     ListView lvVoucher;
-    voucher_adapter adapter;
+    VoucherAdapter adapter;
     ArrayList<Vouchers> vouchers;
 
     @Override
@@ -42,7 +42,7 @@ public class Voucher extends AppCompatActivity
 
     private void loadData()
     {
-        adapter = new voucher_adapter(this,R.layout.item_voucher_list,vouchers);
+        adapter = new VoucherAdapter(this,R.layout.item_voucher_list,vouchers);
         lvVoucher.setAdapter(adapter);
     }
 

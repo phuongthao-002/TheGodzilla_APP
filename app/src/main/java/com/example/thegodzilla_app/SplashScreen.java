@@ -9,7 +9,7 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-public class splash_screen extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
     Animation fadein,zoomout;
     ImageView logo;
 
@@ -29,7 +29,7 @@ public class splash_screen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(splash_screen.this,LogIn.class));
+                startActivity(new Intent(SplashScreen.this,SignUp.class));
                 finish();
             }
         }, 2000);

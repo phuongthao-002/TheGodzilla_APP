@@ -13,17 +13,17 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.example.adapter.cart_adapter;
+import com.example.adapter.CartAdapter;
 import com.example.models.Productcart;
 import com.example.thegodzilla_app.R;
-import com.example.thegodzilla_app.checkout;
+import com.example.thegodzilla_app.CheckOut;
 
 import java.util.ArrayList;
 
 public class CartView extends Fragment {
     Button btnCheckout;
     ListView lv_product;
-    cart_adapter adapter;
+    CartAdapter adapter;
     ArrayList<Productcart> productcarts;
     View.OnClickListener OpenCheckout, Opentick;
     ImageView imvTickall;
@@ -48,13 +48,13 @@ public class CartView extends Fragment {
         productcarts.add(new Productcart(R.drawable.logoconverse,"Converse"));
 
         //init adapter
-        adapter =new cart_adapter(getContext(),R.layout.item_cart_list,productcarts);
+        adapter =new CartAdapter(getContext(),R.layout.item_cart_list,productcarts);
         lv_product.setAdapter(adapter);
 
         OpenCheckout = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getContext(), checkout.class));
+                startActivity(new Intent(getContext(), CheckOut.class));
             }
         };
         btnCheckout.setOnClickListener(OpenCheckout);
