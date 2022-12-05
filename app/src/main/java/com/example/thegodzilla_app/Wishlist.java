@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.GridView;
 
-import com.example.adapter.Wishlist_Product;
+import com.example.adapter.WishlistAdapter;
 import com.example.models.Wishlist_models;
 import com.example.thegodzilla_app.databinding.ActivityWishlistBinding;
 
@@ -20,7 +20,7 @@ public class Wishlist extends AppCompatActivity {
 
     GridView gvProducts;
     ArrayList<Wishlist_models> wishlistArrayList;
-    Wishlist_Product adapter;
+    WishlistAdapter adapter;
 
 
     @Override
@@ -45,7 +45,7 @@ public class Wishlist extends AppCompatActivity {
         wishlistArrayList.add(new Wishlist_models(R.drawable.name, "Adidas", "$500"));
         wishlistArrayList.add(new Wishlist_models(R.drawable.name, "Hanaval", "$450"));
 
-        adapter = new Wishlist_Product(Wishlist.this, R.layout.item_wishlist, wishlistArrayList);
+        adapter = new WishlistAdapter(Wishlist.this, R.layout.item_wishlist, wishlistArrayList);
         binding.gvProducts.setAdapter(adapter);
 
     }

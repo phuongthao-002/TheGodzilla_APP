@@ -14,12 +14,12 @@ import com.example.thegodzilla_app.R;
 
 import java.util.ArrayList;
 
-public class Wishlist_Product extends BaseAdapter {
+public class WishlistAdapter extends BaseAdapter {
     Activity activity;
     int item_wishlist;
     ArrayList<Wishlist_models> wishlists;
 
-    public Wishlist_Product(Activity activity, int item_wishlist, ArrayList<Wishlist_models> wishlists) {
+    public WishlistAdapter(Activity activity, int item_wishlist, ArrayList<Wishlist_models> wishlists) {
         this.activity = activity;
         this.item_wishlist = item_wishlist;
         this.wishlists = wishlists;

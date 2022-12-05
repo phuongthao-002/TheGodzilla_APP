@@ -22,7 +22,7 @@ import com.example.thegodzilla_app.chat;
 import com.example.thegodzilla_app.editaccount;
 import com.example.thegodzilla_app.mypurchase;
 
-public class account extends Fragment {
+public class AccountManagementFragment extends Fragment {
     Button btnLogOut, btnMyPurchase,btnNoti, btnWishList, btnChat;
     ImageButton imbEdit;
     TextView txt_name, txt_mail;

@@ -17,13 +17,13 @@ import com.example.thegodzilla_app.R;
 
 import java.util.ArrayList;
 
-public class notification extends Fragment {
+public class NotificationFragment extends Fragment {
     ListView lv_notifi;
     NotifiAdapter adapter;
     ArrayList<Notifi> notifiArrayList;
 
-    public static notification newInstance() {
-        notification fragment = new notification();
+    public static NotificationFragment newInstance() {
+        NotificationFragment fragment = new NotificationFragment();
         return fragment;
     }
 

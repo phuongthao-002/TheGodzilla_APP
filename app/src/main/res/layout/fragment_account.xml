@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@null"
     android:orientation="vertical"
-    tools:context="com.example.fragment.account">
+    tools:context="com.example.fragment.AccountManagementFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

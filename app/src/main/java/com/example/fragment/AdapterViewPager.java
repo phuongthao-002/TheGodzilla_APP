@@ -17,11 +17,11 @@ public class AdapterViewPager extends FragmentStatePagerAdapter {
             case 0:
                 return new HomeFragment();
             case 1:
-                return new notification();
+                return new NotificationFragment();
             case 2:
                 return new CartView();
             case 3:
-                return new account();
+                return new AccountManagementFragment();
             default:
                 return new HomeFragment();
         }
