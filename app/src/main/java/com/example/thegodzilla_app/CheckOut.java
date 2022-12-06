@@ -66,7 +66,7 @@ public class CheckOut extends AppCompatActivity implements MyBtnVoucherClick
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(CheckOut.this,address.class);
+                Intent intent = new Intent(CheckOut.this, Address.class);
                 startActivity(intent);
 
             }

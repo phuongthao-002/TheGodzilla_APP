@@ -12,7 +12,7 @@ import android.view.View;
 import com.example.models.TranInf;
 import com.example.thegodzilla_app.databinding.ActivityAddressBinding;
 
-public class address extends AppCompatActivity {
+public class Address extends AppCompatActivity {
     ActivityAddressBinding binding;
 //    ActivityResultLauncher<Intent> laucher;
 
@@ -27,7 +27,7 @@ public class address extends AppCompatActivity {
         binding.btnAddressDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(address.this, CheckOut.class);
+                Intent i = new Intent(Address.this, CheckOut.class);
                 String Inf1 = binding.edtAddressName.getText().toString().trim();
                 String Inf2 = binding.edtAddressPhone.getText().toString().trim();
                 String Inf3 = binding.edtAddressWard.getText().toString().trim();

@@ -64,7 +64,7 @@ public class EditAccount extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(EditAccount.this,address.class);
+                Intent intent = new Intent(EditAccount.this, Address.class);
                 startActivity(intent);
             }
         });

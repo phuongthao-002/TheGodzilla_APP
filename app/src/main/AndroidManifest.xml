@@ -98,7 +98,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".chat"
+            android:name=".Chat"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -133,7 +133,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".address"
+            android:name=".Address"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

@@ -43,7 +43,7 @@ public class LogIn extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (edtEmail.getText().length() == 0)
-                    Toast.makeText(LogIn.this, "You must fill in all the information to signing up!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LogIn.this, "You must fill in all the information to Log in!", Toast.LENGTH_SHORT).show();
                 else startActivity(new Intent(LogIn.this, Navigation.class));
             }
         });

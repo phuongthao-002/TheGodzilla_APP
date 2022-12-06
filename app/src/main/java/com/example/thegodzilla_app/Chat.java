@@ -20,7 +20,7 @@ import com.example.models.Message;
 import java.util.ArrayList;
 import java.util.List;
 
-public class chat extends AppCompatActivity {
+public class Chat extends AppCompatActivity {
     private EditText edtMessage;
     private Button btnSend;
     private RecyclerView rcvMessage;

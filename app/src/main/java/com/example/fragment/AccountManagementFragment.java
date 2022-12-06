@@ -18,7 +18,7 @@ import android.widget.TextView;
 import com.example.thegodzilla_app.LogIn;
 import com.example.thegodzilla_app.R;
 import com.example.thegodzilla_app.Wishlist;
-import com.example.thegodzilla_app.chat;
+import com.example.thegodzilla_app.Chat;
 import com.example.thegodzilla_app.EditAccount;
 import com.example.thegodzilla_app.MyPurchase;
 
@@ -74,7 +74,7 @@ public class AccountManagementFragment extends Fragment {
 //        });
         OpenChat = new View.OnClickListener() {
             @Override
-            public void onClick(View v) {startActivity(new Intent(getContext(), chat.class));}
+            public void onClick(View v) {startActivity(new Intent(getContext(), Chat.class));}
         };
         btnChat.setOnClickListener(OpenChat);
 
